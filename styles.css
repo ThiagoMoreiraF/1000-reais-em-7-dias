@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mukta, sans-serif;
+}
+
+
+.logo-mario{
+    width: 350px;
+    margin-top: 100px;
+}
+
+button{
+    background-color: rgb(182, 33, 33);
+    color :white;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.logo-luigi-mario{
+    height: 500px;
+    margin-top: 100px;
+}
+
+.caixa-info-texto{
+    width: 40%;
+}
+
+.div-02{
+    
+}
+
+body{
+  
+    height: 100vh;
+    
+}
+
+.caixa-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    height: 100vh;
+}
+
+.caixa-video{
+    position:fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video{
+    min-width: 100vw;
+    min-height: 100vh;
+    
+}
+
+.mascara-video{
+    
+    background: linear-gradient(90deg,rgba(0, 5, 8, 0.91) 17%, rgba(0, 0, 0, 0.73) 29%, rgba(252, 252, 252, 0) 51%, rgba(65, 58, 58, 0.6) 61%, rgba(0, 0, 0, 0.69) 71%, rgba(0, 0, 0, 1) 96%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+p{
+    color: white;
+    font-size: 24px;
+}
+
+.cabecada img{
+    width: 70px;
+}
+
+.cabecada a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor : pointer;
+}
+
+.cabecada{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 20px;
+    
+}
+
+.cabecada a:hover{
+    color: rgb(182, 33, 33);
+    transition: 0.5s ease-in-out;
+}
+
+.link-zap img{
+    width: 60px;
+    
+}
+
+.caixa-zap{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+form {
+    background-color: white;
+
+    position: fixed;
+    top: 40%;
+    left: -340px;
+
+    /* 
+    codigo pra usar depois
+    left: 50%;
+    transform: translateX(-50%); */
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px;
+    border-radius: 3px;
+
+    width: 350px;
+    z-index: 1;
+}
+
+form input {
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 5px;
+    outline-color: #18d80f;
+}
+
+form textarea {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 5px;
+    outline-color: #18d80f;
+    height: 100px;
+}
+
+.mascara-form {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   background: linear-gradient(109deg,rgba(10, 12, 16, 0.99) 15%,rgba(10, 12, 16, 0.7) 50%,rgba(10, 12, 16, 0.99) 85%);
+   
+}
+
+
