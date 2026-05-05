@@ -31,7 +31,7 @@
                 Mario e Luigi!
             </p>
 
-            <button>entre em contato</button>
+            <button onclick="cliqueiNoBotao()">entre em contato</button>
         </div>
 
         <div class="div-02">
@@ -51,14 +51,18 @@
         </a>
     </div>
 
-    <form action="">
-        <input type="text" placeholder="seu nome">
-        <input type="text" placeholder="seu email">
-        <textarea name="" id="" placeholder="digite seu problema aqui..."></textarea>
-        <button>Pedir Orçamento</button>
+    <form class="formulario"
+        action="https://formcarry.com/s/T_e12dpybBL"
+        method="POST"
+        enctype="multipart/form-data"
+    >
+        <input  placeholder="seu nome" type="text" name="nome">
+        <input  placeholder="seu email" type="email" name="email">
+        <textarea placeholder="digite seu problema aqui..." name="problema"></textarea>
+        <button type="submit">Pedir Orçamento</button>
     </form>
 
-    <div class="mascara-form"></div>
+    <div class="mascara-form" onclick="esconderform()"></div>
     <script src="scripts.js"></script>
 
 </body>
