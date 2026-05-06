@@ -39,7 +39,7 @@ button{
 
 body{
   
-    height: 100vh;
+    min-height: 100vh;
     
 }
 
@@ -48,7 +48,7 @@ body{
     align-items: center;
     justify-content: space-around;
     padding: 100px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .caixa-video{
@@ -166,5 +166,78 @@ form textarea {
    visibility: hidden;
    transition: 0.5s visibility ease-in-out;
 } 
+
+@media (max-width: 768px){
+
+
+
+    .logo-mario{
+        width: 250px;
+        display: none;
+    }
+
+    .caixa-principal{
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .caixa-video{
+        position: fixed;
+        top: 0;
+        z-index: -1;
+        height: 100vh;
+        width: 100vw;
+        
+    }
+
+    .mascara-video{
+        background: linear-gradient(90deg,rgba(0, 5, 8, 0.91) 17%, rgba(0, 0, 0, 0.73) 29%, rgba(252, 252, 252, 0) 51%, rgba(65, 58, 58, 0.6) 61%, rgba(0, 0, 0, 0.69) 71%, rgba(0, 0, 0, 1) 96%);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+    }
+
+    .mascara-form{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background: linear-gradient(109deg,rgba(10, 12, 16, 0.99) 15%,rgba(10, 12, 16, 0.7) 50%,rgba(10, 12, 16, 0.99) 85%);
+        visibility: hidden;
+        transition: 0.5s visibility ease-in-out;
+    }
+
+    .logo-luigi-mario{
+    height: 300px;
+    margin-top: 20px;
+}
+
+    .caixa-info-texto{
+        margin-top: 150px;
+        text-align: center;
+        width: 90%;
+        color: rgb(88, 1, 1);
+    }
+
+    p {
+        color: rgb(234, 209, 209);
+        
+    }
+
+    .cabecada{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+   
+}
 
 
